@@ -22,10 +22,11 @@ this template uses zpool, zfs and zvol discovery so you will have all informatio
 - roll your own by creating items, triggers and graphs with the use of zfs.get[zfsname,property], zpool.get[zpoolname,property] and zfs.parameter[parametername]
 
 
-## installation 
+## installation and usage
 1. place this file in /etc/zabbix/zabbix_agentd.conf.d/
 2. restart zabbix agent
 3. import the template.xml file in the zabbix gui
+4. in case the discovery items are not suffucient, roll your own. see the custom section
 
 ## sources
 - https://zfsonlinux.org/
