@@ -1,6 +1,7 @@
 # zabbix template for zfs on linux
 
-this template uses zpool, zfs and zvol discovery so you will have all information about all zfs items available by default.
+this template uses zpool, zfs and zvol discovery so you will have information about important zpool and zfs items available by default.
+on top of that, you can easily create your own items and triggers by having zabbix keys available to get zpool and zfs properties that are exposed via the zpool and zfs binaries on your system.
 
 ## items:
 - discovered: zpool information (health! and others)
