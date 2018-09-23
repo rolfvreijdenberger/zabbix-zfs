@@ -3,9 +3,11 @@
 this template uses zpool, zfs and zvol discovery so you will have all information about all zfs items available by default.
 
 ## items:
-- zpool information (health!)
-- zfs information (used, used by snapshots, free etc)
-- zvol information (used, used by snapshots, used by children, free etc)
+- discovered: zpool information (health!)
+- discovered: zfs information (used, used by snapshots, free etc)
+- discovered: zvol information (used, used by snapshots, used by children, free etc)
+- zfs parameters (/sys/module/zfs/parameters/*)
+- zfs properties (zfs get -o name,value,source,property <name> <fs>)
 
 ## triggers:
 - zpool health
