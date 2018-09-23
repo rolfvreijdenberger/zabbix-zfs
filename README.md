@@ -11,12 +11,15 @@ this template uses zpool, zfs and zvol discovery so you will have all informatio
  - zpool properties (```zpool get -o name,value,source,property <propertyname> <zpoolname>```). you can get these yourself by creating an item: ```zpool.get[<zpoolname>,<propertyname>]```
 
 ## triggers:
-- zpool health
+- discovered: zpool health
 
 ## graphs:
-- overwiew for zpools
-- overview for zfs filesystems
-- overview for zfs zvols
+- discovered: overwiew for zpools
+- discovered: overview for zfs filesystems
+- discovered: overview for zfs zvols
+
+## custom:
+- roll your own by creating items, triggers and graphs with the use of zfs.get[zfsname,property], zpool.get[zpoolname,property] and zfs.parameter[parametername]
 
 
 ## installation 
