@@ -20,3 +20,7 @@ this template uses zpool, zfs and zvol discovery so you will have all informatio
 1. place this file in /etc/zabbix/zabbix_agentd.conf.d/
 2. restart zabbix agent
 3. import the template.xml file in the zabbix gui
+
+## sources
+- https://zfsonlinux.org/
+- https://www.zabbix.com/documentation/3.4/manual
