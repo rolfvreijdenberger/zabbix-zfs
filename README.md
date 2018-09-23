@@ -8,7 +8,7 @@ this template uses zpool, zfs and zvol discovery so you will have all informatio
 - discovered: zvol information (used, used by snapshots, used by children, avail and others)
 - zfs parameters (```/sys/module/zfs/parameters/*```). you can get these yourself by creating an item: ```zfs.parameter[<parametername>]```
 - zfs properties (```zfs get -o name,value,source,property <propertyname> <zfsname>```). you can get these yourself by creating an item: ```zfs.get[<zfsname>,<propertyname>]```
- - zpool properties (```zpool get -o name,value,source,property <propertyname> <zpoolname>```). you can get these yourself by creating an item: ```zpool.get[<zfsname>,<propertyname>]```
+ - zpool properties (```zpool get -o name,value,source,property <propertyname> <zpoolname>```). you can get these yourself by creating an item: ```zpool.get[<zpoolname>,<propertyname>]```
 
 ## triggers:
 - zpool health
